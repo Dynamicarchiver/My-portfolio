@@ -1,0 +1,29 @@
+nav{
+    background-color: var(--bs-dark);
+    display: block;
+    padding: 0.7rem 1.7 rem;
+    z-index: 2;
+    position: fixed;
+    bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+nav a{
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+   display:flex;
+   
+    font-weight: 800;
+    font-size: 1.2rem;
+    transition: var(--transition);
+
+}
+nav a.active{
+    background-color: var(--bs-primary);
+    color:rgb(255, 255, 255)
+}

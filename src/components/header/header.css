@@ -1,0 +1,85 @@
+/*******************HEADER*********************/
+header{
+  height: 100vh;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+.header__container{
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+/*********************CTA********************/
+.cta{
+margin-top: 2.5rem;
+display: flex;
+gap: 1rem;
+justify-content: center;
+}
+/*********************HEADER SOCIALS*****************/
+.header__socials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+.header__socials::after{
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--bs-pink);
+}
+/**********************IMAGE ME*************************/
+.me {
+  width:22rem;
+  height: 40rem;;
+ position: absolute;
+ left: calc(50% - 11rem);
+ margin-top: 2rem;
+  border-radius: 12rem 12rem 0 0;
+overflow: hidden;
+
+}
+.me img{
+  height: 22rem;
+}
+/*************SCROLL DOWN*****************/
+.scroll__down{
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transform: rotate(90deg);
+}
+/***********TYPEWRITER EFFECT ******************/
+.typed-out{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(20, end) forwards, blinking .8s ;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  /*************KEYFRAMES ***************/
+  /************TYPING*******************/
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  /***********************MEDIA QUERIES (MEDIUM DEVICES)***********************/
+@media  screnn and (max-width:1024px) {
+header{
+  height: 100vh;
+}
+}
+/***********************MEDIA QUERIES (SMALL DEVICES)***********************/
+@media  screen and (max-width:600px) {
+.header__socials{
+  align-items: left;
+}
+}
